@@ -1,0 +1,14 @@
+{
+  "orgName": "gocapan-dev-ed",
+  "edition": "Developer",
+  "adminemail": "chrzaszwork@gmail.com",
+  "features": ["EnableSetPasswordInApi"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
