@@ -46,6 +46,8 @@
     </types>
     <types>
         <members>Account</members>
+        <members>Contact</members>
+        <members>Case</members>
         <members>TestObject1__c</members>
         <members>TestObject2__c</members>
         <members>TestObject3__c</members>
