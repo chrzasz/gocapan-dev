@@ -1,0 +1,24 @@
+{
+   "objects": [
+      {
+         "query": "SELECT Id, Phone, TestObject3__c FROM Account WHERE TestObject3__r.Name > '60' AND TestObject3__r.Name < '63'",
+         "operation": "Upsert",
+         "externalId": "Name"
+      },
+      {
+         "query": "SELECT Id, Account__c, TestObject3__c, RecordTypeId FROM TestObject1__c LIMIT 1",
+         "operation": "Upsert",
+         "externalId": "Name"
+      },
+      {
+         "query": "SELECT Id, Account__c, TestObject1__c FROM TestObject2__c LIMIT 1",
+         "operation": "Upsert",
+         "externalId": "Name"
+      },
+      {
+         "query": "SELECT Id, TestObject2__c FROM TestObject3__c LIMIT 1",
+         "operation": "Upsert",
+         "externalId": "Name"
+      }
+   ]
+}
