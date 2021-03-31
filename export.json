@@ -6,17 +6,17 @@
          "externalId": "Name"
       },
       {
-         "query": "SELECT Id, Account__c, TestObject3__c, RecordTypeId FROM TestObject1__c WHERE Account__c IN ('0010900000Dz0E1AAJ') ORDER BY CreatedDate DESC LIMIT 2",
+         "query": "SELECT Id, Account__c, TestObject3__c, RecordTypeId FROM TestObject1__c WHERE Account__c IN ('0010900000Dz0E1AAJ') AND TestObject3__c IN ('a020900000360H2AAI') AND Id IN ('a0009000006k2kRAAQ')",
          "operation": "Upsert",
          "externalId": "Name"
       },
       {
-         "query": "SELECT Id, Account__c, TestObject1__c FROM TestObject2__c WHERE Account__c IN ('0010900000Dz0E1AAJ') ORDER BY CreatedDate DESC LIMIT 2",
+         "query": "SELECT Id, Account__c, TestObject1__c FROM TestObject2__c WHERE Account__c IN ('0010900000Dz0E1AAJ') AND Id IN ('a010900000kx69dAAA')",
          "operation": "Upsert",
          "externalId": "Name"
       },
       {
-         "query": "SELECT Id, TestObject2__c FROM TestObject3__c WHERE TestObject2__c IN (SELECT Id FROM TestObject2__c WHERE Account__c IN ('0010900000Dz0E1AAJ') ORDER BY CreatedDate DESC LIMIT 2) AND Id IN ('a020900000360H2AAI')",
+         "query": "SELECT Id, TestObject2__c FROM TestObject3__c WHERE Id IN ('a020900000360H2AAI')",
          "operation": "Upsert",
          "externalId": "Name"
       }
